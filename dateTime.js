@@ -3,13 +3,15 @@ function currentDateTime() {
 
     let year = dateTime.getFullYear();
     let month = dateTime.getMonth();
-    let day = dateTime.getDay();
+    let day = dateTime.getDate();
 
     let hour = dateTime.getHours();
     let minutes = dateTime.getMinutes();
     let seconds = dateTime.getSeconds();
 
     let midday = "AM";
+
+    month = month + 1;
 
     if (month < 10) {
         month = "0" + month;
