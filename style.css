@@ -45,7 +45,7 @@ body {
     background-color: rgb(12, 12, 12);
 }
 
-.sectionPanel {
+.section .sectionPanel {
     background-color: black;
     padding: 15px;
     position: relative;
