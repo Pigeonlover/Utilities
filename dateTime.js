@@ -20,7 +20,7 @@ function currentDateTime() {
         day = "0" + day;
     }
 
-    if (hour > 11) {
+    if (hour >= 12) {
         midday = "PM";
     }
     if (hour >= 13) {
