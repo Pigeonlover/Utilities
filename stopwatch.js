@@ -43,6 +43,7 @@ function printCount(text) {
 
 // Start, stop, and reset functions
 function startCount() {
+    document.getElementById('swStart').disabled = true;
     startTime = Date.now() - elapsedTime;
     timeInterval = setInterval(function printTime(){
         elapsedTime = Date.now() - startTime;
@@ -51,10 +52,12 @@ function startCount() {
 }
 
 function stopCount() {
+    document.getElementById('swStart').disabled = false;
     clearInterval(timeInterval);
 }
 
 function resetCount() {
+    document.getElementById('swStart').disabled = false;
     clearInterval(timeInterval);
     printCount('00:00:00:00');
     elapsedTime = 0;
